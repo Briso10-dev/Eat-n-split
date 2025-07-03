@@ -1,3 +1,4 @@
+import FriendList from "./FriendList";
 
 const initialFriends = [
   {
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-      
+      <FriendList/>
     </>
   )
 }
