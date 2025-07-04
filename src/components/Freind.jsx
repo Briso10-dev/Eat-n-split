@@ -5,10 +5,18 @@ function Friend({ friend }) {
             <img src={friend.image} alt={friend.name}
                 className="rounded-full w-full row-span-1" />
             <h3 className="col-start-2 row-start-1"> {friend.name} </h3>
-            {friend.balance < 0 && <p className="col-start-2 row-start-2 text-[#e03131]">
-                You owe {friend.name} {Math.abs(friend.balance)} €
-            </p>}
-
+            {friend.balance < 0 && (
+                <p className="col-start-2 row-start-2 text-[#e03131]">
+                    You owe {friend.name} {Math.abs(friend.balance)} €
+                </p>
+            )}
+            {friend.balance < 0 && (
+                <p className="col-start-2 row-start-2 text-[#66a80f]">
+                    {friend.name} owes you {Math.abs(friend.balance)} €
+                </p>
+            )}
+            {friend.balance < 0 && <p className="col-start-2 row-start-2"> You and {friend.name} 
+                are even</p>}
         </li>
     )
 }
