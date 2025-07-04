@@ -1,3 +1,4 @@
+import Friend from "./Freind";
 
 const initialFriends = [
   {
@@ -24,9 +25,9 @@ function FriendList(){
     const friends = initialFriends;
 
     return(
-        <ul className="list-none flex flex-col gap-[0.4rem] text-[1.4rem] mb-8">
+        <ul className="list-none flex flex-col gap-[3rem] text-[2rem] mb-8">
             {friends.map((friend) => (
-                <li className="grid grid-cols-[4.8rem_1fr_auto] items-center gap-x-[1.6rem] p-[1.2rem] rounded-[7px] transition duration-500 hover:bg-[#fff4e6]"> {friend.name} </li>
+               <Friend friend={friend} key={friend.id} />
 
             ))}
         </ul>
