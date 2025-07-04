@@ -25,7 +25,7 @@ function FriendList(){
     const friends = initialFriends;
 
     return(
-        <ul className="list-none flex flex-col gap-[3rem] text-[2rem] mb-8">
+        <ul className="list-none flex flex-col gap-[4rem] text-[2rem] mb-8">
             {friends.map((friend) => (
                <Friend friend={friend} key={friend.id} />
 
