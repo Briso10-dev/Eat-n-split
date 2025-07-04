@@ -6,7 +6,7 @@ function Friend({ friend }) {
                 className="rounded-full w-full row-span-1" />
             <h3 className="col-start-2 row-start-1"> {friend.name} </h3>
             {friend.balance < 0 && <p className="col-start-2 row-start-2 text-[#e03131]">
-                You owe {friend.name} {friend.balance}€
+                You owe {friend.name} {Math.abs(friend.balance)} €
             </p>}
 
         </li>
