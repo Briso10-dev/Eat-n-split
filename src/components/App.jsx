@@ -1,4 +1,6 @@
 import FriendList from "./FriendList";
+import FormAddFriend from "./FormAddFriend";
+import Button from "./Button";
 
 function App() {
 
@@ -6,6 +8,8 @@ function App() {
     <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-star">
       <div>
         <FriendList/>
+        <FormAddFriend />
+        <Button>Add friend</Button>
       </div>
     </div>
   )
