@@ -1,3 +1,4 @@
+import Button from "./Button";
 
 function FormAddFriend(){
     return(
@@ -8,6 +9,7 @@ function FormAddFriend(){
             <label htmlFor="">Image URL</label>
             <input type="text" />
 
+        <Button>Add</Button>
         </form>
     )
 

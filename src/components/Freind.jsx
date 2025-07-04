@@ -1,3 +1,4 @@
+import Button from "./Button";
 
 function Friend({ friend }) {
     return (
@@ -18,7 +19,8 @@ function Friend({ friend }) {
             {friend.balance < 0 && <p className="col-start-2 row-start-2"> You and {friend.name} 
                 are even</p>}
 
-            
+            <Button>Select</Button>  {/* The children rop of this Button */}
+           
         </li>
     )
 }
