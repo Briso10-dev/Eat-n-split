@@ -5,7 +5,7 @@ import Button from "./Button";
 function App() {
 
   return (
-    <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-star">
+    <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-start">
       <div>
         <FriendList/>
         <FormAddFriend />
