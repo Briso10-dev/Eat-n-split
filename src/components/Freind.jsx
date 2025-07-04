@@ -18,7 +18,7 @@ function Friend({ friend }) {
             {friend.balance < 0 && <p className="col-start-2 row-start-2"> You and {friend.name} 
                 are even</p>}
 
-            <button className="bg-[#ffa94d] text-[#343a40] px-[1rem] py-[1.2rem] border-none rounded-lg font-bold cursor-pointer transition-colors duration-300 hover:bg-[#ff922b] col-start-3 row-span-2">Select</button>
+            
         </li>
     )
 }
