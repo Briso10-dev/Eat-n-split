@@ -1,6 +1,7 @@
 import FriendList from "./FriendList";
 import FormAddFriend from "./FormAddFriend";
 import Button from "./Button";
+import FormSplitBill from "./FormSplitBill";
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
         <FormAddFriend />
         <div className="self-end"><Button>Add friend</Button></div>
       </div>
+
+      <FormSplitBill />
     </div>
   )
 }
