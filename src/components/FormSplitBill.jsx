@@ -21,7 +21,14 @@ function FormSplitBill(){
                 <input
                     type="text"
                     className="w-[30rem] h-[3rem] text-[1.4rem] p-[1rem] border border-[#ffa94d] bg-gray-200 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    disabled
                 />
+
+                <label>Who is paying the bill</label>
+                <select>
+                    <option value="user">You</option>
+                    <option value="friend">X</option>
+                </select>
 
                 <Button>Split bill </Button>
         </form>
