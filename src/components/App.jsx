@@ -17,7 +17,7 @@ function App() {
       <div className="flex flex-col gap-10 w-[45rem]">
         <FriendList />
         {showAddFriend && <FormAddFriend />}
-        <div className="self-end">
+        <div className="mr-10 self-end">
           <Button onClick={handleShowAddFriend}>
             {showAddFriend ? "Close" : "Add friend"}
           </Button>
