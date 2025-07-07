@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function FormAddFriend() {
 
-    const [name,setName] = useState("");
+    const [name,setName] = useState("https://i.pravatar.cc/48");
     const [image, setImage] = useState("");
 
     return (
