@@ -25,7 +25,7 @@ function FormSplitBill(){
                 />
 
                 <label>Who is paying the bill</label>
-                <select>
+                <select >
                     <option value="user">You</option>
                     <option value="friend">X</option>
                 </select>

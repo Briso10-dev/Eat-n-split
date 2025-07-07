@@ -1,9 +1,13 @@
+import { useState } from "react";
 import FriendList from "./FriendList";
 import FormAddFriend from "./FormAddFriend";
 import Button from "./Button";
 import FormSplitBill from "./FormSplitBill";
 
 function App() {
+
+   const [showAddFriend, setShowAddFriend] = useState(false);
+    
 
   return (
     <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-start">
