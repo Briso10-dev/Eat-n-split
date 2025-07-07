@@ -12,7 +12,7 @@ function FormAddFriend() {
                 <label className="self-start">Friend name</label>
                 <input
                     type="text"
-                    className="w-[20rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    className="w-[20rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
@@ -21,7 +21,7 @@ function FormAddFriend() {
                 <label className="self-start">Image URL</label>
                 <input
                     type="text"
-                    className="w-[20rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    className="w-[20rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-white outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
             <div className="self-center"><Button>Add</Button></div>
