@@ -22,6 +22,8 @@ function FormAddFriend() {
                 <input
                     type="text"
                     className="w-[20rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-white outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)}
                 />
             </div>
             <div className="self-center"><Button>Add</Button></div>
