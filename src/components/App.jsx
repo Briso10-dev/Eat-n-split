@@ -43,8 +43,9 @@ function App() {
   //handler to set communication between FormSplit and FriendSplit components
   function handleSelection(friend){
     // setSelectedFriend(friend);
-    setSelectedFriend((cur) => cur?.id === friend.id ? null : friend 
-    );
+    setSelectedFriend((cur) => cur?.id === friend.id ? 
+    null : friend );
+    setShowAddFriend(false);
 
   }
 
