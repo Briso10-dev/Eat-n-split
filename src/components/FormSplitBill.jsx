@@ -4,7 +4,9 @@ import Button from "./Button";
 function FormSplitBill({ selectedFriend }) {
     const [bill, setBill] = useState("")
     const [paidByUser, setPaidByUser] = useState('');
+    const paidByFriend = bill ? - paidByUser : "";
     const [whoIsPaying, setWhoIsPaying] = useState("user");
+
 
     return (
         <form className="bg-[#fff4e6] ml-[18rem] flex flex-col justify-center gap-[4rem] text-[1.6rem] py-4 w-[50rem]">
@@ -31,6 +33,7 @@ function FormSplitBill({ selectedFriend }) {
                 <label className="self-start pl-[4rem]">👬 {selectedFriend.name} expense</label>
                 <input
                     type="text"
+                    value={paidByFriend}
                     className="w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                     disabled
                 />
