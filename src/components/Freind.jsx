@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Friend({ friend }) {
     return (
-        <li className="w-[44rem] grid grid-cols-[4.8rem_1fr_auto] items-center gap-x-[2rem] p-[1.2rem] rounded-[1.5rem] transition duration-500 hover:bg-[#fff4e6]">
+        <li className="w-[46rem] grid grid-cols-[4.8rem_1fr_auto] items-center gap-x-[2rem] p-[1.2rem] rounded-[1.5rem] transition duration-500 hover:bg-[#fff4e6]">
             <img src={friend.image} alt={friend.name}
                 className="rounded-full w-full row-span-2" />
             <h3 className="col-start-2 row-start-1"> {friend.name} </h3>
