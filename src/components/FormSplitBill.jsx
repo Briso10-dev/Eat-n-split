@@ -1,9 +1,9 @@
 import Button from "./Button";
 
-function FormSplitBill(){
+function FormSplitBill({ selectedFriend }){
     return(
         <form className="bg-[#fff4e6] translate-x-[18rem] flex flex-col gap-[4rem] text-[1.6rem] px-6 py-4 w-[53rem]">
-            <h2 className="font-bold text-[2.8rem] text-center  uppercase">SPlit a bill with X</h2>
+            <h2 className="font-bold text-[2.8rem] text-center  uppercase">Split a bill with {selectedFriend.name} </h2>
             <div className="flex items-center gap-[10rem]">
             <label className="self-start">💰 Bill value</label>
                 <input

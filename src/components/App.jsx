@@ -60,7 +60,7 @@ function App() {
         </div>
       </div>
 
-      {selectedFriend && <FormSplitBill/>}
+      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} />}
     </div>
   )
 }
