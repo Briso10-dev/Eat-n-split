@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Button from "./Button";
 
 function FormSplitBill({ selectedFriend }) {
+    const [bill, setBill] = useState("")
+    const [paidByUser, setPaidByUser] = useState('');
+    const [whoIsPaying, setWhoIsPaying] = useState("user");
+
     return (
         <form className="bg-[#fff4e6] ml-[18rem] flex flex-col justify-center gap-[4rem] text-[1.6rem] py-4 w-[50rem]">
             <h2 className="font-bold text-[2.8rem] px-[5rem] uppercase">Split a bill with {selectedFriend.name} </h2>
