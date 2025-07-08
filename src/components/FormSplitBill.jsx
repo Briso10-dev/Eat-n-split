@@ -13,6 +13,8 @@ function FormSplitBill({ selectedFriend }) {
                 <label className="self-start px-[4rem]">💰 Bill value</label>
                 <input
                     type="text"
+                    value={bill}
+                    onChange={(e) =>setBillNumber((e.target.value))}
                     className="w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
@@ -20,6 +22,8 @@ function FormSplitBill({ selectedFriend }) {
                 <label className="self-start px-[3.8rem]">🧍‍♂️ Your expense</label>
                 <input
                     type="text"
+                    value={paidByUser}
+                    onChange={(e) =>setPaidByUserNumber((e.target.value))}
                     className="self-end w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
@@ -33,7 +37,10 @@ function FormSplitBill({ selectedFriend }) {
             </div>
             <div className="grid grid-cols-[20rem_1fr] items-center gap-[10rem]">
                 <label className="pl-[4rem] w-[25rem]"> 🤑 Who is paying the bill</label>
-                <select className="bg-white w-[13rem] h-[3rem] rounded-md text-center">
+                <select 
+                    value={whoIsPaying}
+                    onChange={(e) => setWhoIsPaying(e.target.value)}
+                    className="bg-white w-[13rem] h-[3rem] rounded-md text-center">
                     <option value="user">You</option>
                     <option value="friend"> {selectedFriend.name} </option>
                 </select>
