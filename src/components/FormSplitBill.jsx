@@ -8,7 +8,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
     const [whoIsPaying, setWhoIsPaying] = useState("user");
 
     function handleSubmit(e){
-        e.prevent.Default();
+        e.preventDefault();
 
         if(!bill || !paidByUser) return;
         onSplitBill(whoIsPaying === 'user' ? paidByFriend : - paidByUser);
@@ -25,7 +25,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                     type="text"
                     value={bill}
                     onChange={(e) =>setBill(Number(e.target.value))}
-                    className="w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    className="w-[13rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
             <div className="grid grid-cols-[20rem_1fr] items-center gap-[10rem]">
@@ -39,7 +39,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                         Number(e.target.value)
                     )
                 }
-                    className="self-end w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    className="self-end w-[13rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
             <div className="grid grid-cols-[20rem_1fr] items-center gap-[10rem]">
@@ -47,7 +47,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                 <input
                     type="text"
                     value={paidByFriend}
-                    className="w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
+                    className="w-[13rem] h-[3rem] text-[1.4rem] text-center p-[1rem] border-s-white bg-gray-50 outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                     disabled
                 />
             </div>
