@@ -62,7 +62,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                 </select>
             </div>
 
-            <div className="self-center"><Button>Add</Button></div>
+            <div className="ml-[24rem] self-center"><Button>Split bill</Button></div>
         </form>
     )
 }
