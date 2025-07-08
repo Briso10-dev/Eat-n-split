@@ -25,7 +25,12 @@ function FormSplitBill({ selectedFriend }) {
                 <input
                     type="text"
                     value={paidByUser}
-                    onChange={(e) =>setPaidByUser(Number(e.target.value))}
+                    onChange={(e) => 
+                        setPaidByUser(
+                        Number(e.target.value) > bill ? paidByUser : 
+                        Number(e.target.value)
+                    )
+                }
                     className="self-end w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
