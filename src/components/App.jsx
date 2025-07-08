@@ -36,6 +36,7 @@ function App() {
 
   function handleAddFriend(friend){
     setFriends(friends => [...friends, friend]);
+    setShowAddFriend(false);
   }
 
   return (
