@@ -34,11 +34,15 @@ function App() {
     setShowAddFriend((show) => !show);
   }
 
+  function handleAddFriend(friend){
+    setFriends(friends => [...friends, friend]);
+  }
+
   return (
     <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-start">
       <div className="flex flex-col gap-10 w-[45rem]">
         <FriendList friends={friends} />
-        {showAddFriend && <FormAddFriend />}
+        {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <div className="mr-10 self-end">
           <Button onClick={handleShowAddFriend}>
             {showAddFriend ? "Close" : "Add friend"}
