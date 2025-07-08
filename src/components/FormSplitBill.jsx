@@ -27,8 +27,8 @@ function FormSplitBill({ selectedFriend }){
                 />
             </div>
             <div className="flex gap-[10rem]">
-                <label>💰 Who is paying the bill</label>
-                <select className="bg-white w-[18rem] text-center">
+                <label> 🤑 Who is paying the bill</label>
+                <select className="bg-white w-[13rem] h-[3rem] rounded-md text-center">
                     <option value="user">You</option>
                     <option value="friend"> {selectedFriend.name} </option>
                 </select>
