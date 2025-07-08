@@ -22,7 +22,9 @@ function Friend({ friend, onSelection, selectedFriend }) {
             {friend.balance === 0 && 
                 <p className="col-start-2 row-start-2 w-full"> You and {friend.name} are even</p>}
 
-            <Button onClick={() => onSelection(friend)}>Select</Button>  {/* The children rop of this Button */}
+            <Button onClick={() => onSelection(friend)}>
+                {isSelected ? "Close" : "Selected"}    
+            </Button>  {/* The children rop of this Button */}
            
         </li>
     )
