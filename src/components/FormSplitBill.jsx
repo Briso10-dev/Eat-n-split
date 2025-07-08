@@ -4,7 +4,7 @@ import Button from "./Button";
 function FormSplitBill({ selectedFriend }) {
     const [bill, setBill] = useState("")
     const [paidByUser, setPaidByUser] = useState('');
-    const paidByFriend = bill ? - paidByUser : "";
+    const paidByFriend = bill ? bill - paidByUser : "";
     const [whoIsPaying, setWhoIsPaying] = useState("user");
 
 
@@ -16,7 +16,7 @@ function FormSplitBill({ selectedFriend }) {
                 <input
                     type="text"
                     value={bill}
-                    onChange={(e) =>setBillNumber((e.target.value))}
+                    onChange={(e) =>setBill(Number(e.target.value))}
                     className="w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
@@ -25,7 +25,7 @@ function FormSplitBill({ selectedFriend }) {
                 <input
                     type="text"
                     value={paidByUser}
-                    onChange={(e) =>setPaidByUserNumber((e.target.value))}
+                    onChange={(e) =>setPaidByUser(Number(e.target.value))}
                     className="self-end w-[13rem] h-[3rem] text-[1.4rem] p-[1rem] border-s-white bg-white  outline-none rounded-md focus:outline-none focus:ring-2 focus:ring-[#ffa94d]"
                 />
             </div>
