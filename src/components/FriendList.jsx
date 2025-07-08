@@ -1,6 +1,6 @@
 import Friend from "./Freind";
 
-function FriendList(){
+function FriendList({friends}){
    
 
     return(
