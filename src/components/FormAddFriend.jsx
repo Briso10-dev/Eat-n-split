@@ -3,11 +3,26 @@ import Button from "./Button";
 
 function FormAddFriend() {
 
-    const [name,setName] = useState("https://i.pravatar.cc/48");
-    const [image, setImage] = useState("");
+    const [name,setName] = useState("");
+    const [image, setImage] = useState("https://i.pravatar.cc/48");
+
+    function handleSubmit(e){
+        e.preventDefault();
+
+        const newFriend = {
+            name,
+            image, 
+            balance: 0,
+            id : crypto.randomUUID
+        }
+
+        console.log(newFriend );
+    }
 
     return (
-        <form className="w-[45rem] h-[15rem]  text-[1.8rem] flex flex-col items-cente gap-[1.2rem] bg-[#fff4e6] rounded-[1rem] p-[2rem]">
+        <form className="w-[45rem] h-[15rem]  text-[1.8rem] flex flex-col items-cente gap-[1.2rem] bg-[#fff4e6] rounded-[1rem] p-[2rem]"
+              onSubmit={handleSubmit}  
+        >
             <div className="flex gap-[5rem]">
                 <label className="self-start">Friend name</label>
                 <input
