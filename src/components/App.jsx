@@ -40,19 +40,27 @@ function App() {
     setShowAddFriend(false);
   }
 
+  //handler to set communication between FormSplit and FriendSplit components
+  function handleSelection(friend){
+    setSelectedFriend(friend);
+  }
+
   return (
     <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-start">
       <div className="flex flex-col gap-10 w-[45rem]">
-        <FriendList friends={friends} />
+        <FriendList friends={friends} onSelection = {handleSelection}/>
+
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
+
         <div className="self-end">
           <Button  onClick={handleShowAddFriend}>
             {showAddFriend ? "Close" : "Add friend"}
           </Button>
+
         </div>
       </div>
 
-      {selectedFriend && <FormSplitBill />}
+      {selectedFriend && <FormSplitBill/>}
     </div>
   )
 }
