@@ -18,6 +18,9 @@ function FormAddFriend() {
         }
 
         console.log(newFriend );
+
+        setName('');
+        setImage("https://i.pravatar.cc/48");
     }
 
     return (
