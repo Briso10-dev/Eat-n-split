@@ -48,6 +48,9 @@ function App() {
     setShowAddFriend(false);
 
   }
+  function handleSplitBill(value){
+        console.log(value);
+  }
 
   return (
     <div className="min-h-[66vh] grid grid-cols-[34rem_44rem] gap-x-[4rem] items-start">
@@ -67,7 +70,7 @@ function App() {
         </div>
       </div>
 
-      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} />}
+      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} onSplitBill = {handleSplitBill} />}
     </div>
   )
 }

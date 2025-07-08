@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 
-function FormSplitBill({ selectedFriend }) {
+function FormSplitBill({ selectedFriend, onSplitBill }) {
     const [bill, setBill] = useState("")
     const [paidByUser, setPaidByUser] = useState('');
     const paidByFriend = bill ? bill - paidByUser : "";
@@ -11,11 +11,13 @@ function FormSplitBill({ selectedFriend }) {
         e.prevent.Default();
 
         if(!bill || !paidByUser) return;
+        onSplitBill(whoIsPaying === 'user' ? paidByFriend : - paidByUser);
     }
 
     return (
-        <form   onSubmit={handleSubmit}
-                className="bg-[#fff4e6] ml-[18rem] flex flex-col justify-center gap-[4rem] text-[1.6rem] py-4 w-[50rem]">
+        <form   
+            onSubmit={handleSubmit}
+             className="bg-[#fff4e6] ml-[18rem] flex flex-col justify-center gap-[4rem] text-[1.6rem] py-4 w-[50rem]">
             <h2 className="font-bold text-[2.8rem] px-[5rem] uppercase">Split a bill with {selectedFriend.name} </h2>
             <div className="grid grid-cols-[20rem_1fr] items-center gap-[10rem]">
                 <label className="self-start px-[4rem]">💰 Bill value</label>
