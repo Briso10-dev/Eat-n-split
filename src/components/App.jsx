@@ -45,7 +45,7 @@ function App() {
         <FriendList friends={friends} />
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <div className="self-end">
-          <Button onClick={handleShowAddFriend}>
+          <Button  onClick={handleShowAddFriend}>
             {showAddFriend ? "Close" : "Add friend"}
           </Button>
         </div>
