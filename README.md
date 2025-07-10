@@ -42,7 +42,9 @@ Project Structure
     src/: Contains all the React components and logic.
     public/: Contains the HTML file and any static assets.
 
-Screenshot of Eat and Split App
+## 📸 Screenshots
+
+![Desktop View](./public/screenshot-app.png)
 
 ## 🙏 Acknowledgments
 
