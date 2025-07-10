@@ -26,15 +26,15 @@ The Eat and Split app is a simple, user-friendly application designed to help us
    git clone https://github.com/Briso10-dev/Eat-n-split
 
 2. Navigate to the project directory:
-   ´´´bash
+   ```bash
    cd Eat-n-split
 
 3. Install the required dependencies:
-    ´´´bash
+    ```bash
     npm install
 
 4. Start the development server:
-    ´´´bash
+    ```bash
     npm start
 
 Project Structure
